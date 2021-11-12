@@ -139,12 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="console.cpp" />
     <ClCompile Include="mem.cpp" />
     <ClCompile Include="offsets.cpp" />
     <ClCompile Include="proc.cpp" />
     <ClCompile Include="StarCititzenCoordsGrabber.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="console.h" />
     <ClInclude Include="mem.h" />
     <ClInclude Include="offsets.h" />
     <ClInclude Include="proc.h" />

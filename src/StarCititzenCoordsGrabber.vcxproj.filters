@@ -13,33 +13,45 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="mem">
+      <UniqueIdentifier>{26ff4111-8611-4f5f-b7de-36ef3786a6e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="console">
+      <UniqueIdentifier>{06b967ad-2b80-4a99-9b15-05aaeec7534b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="StarCititzenCoordsGrabber.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="proc.cpp">
+      <Filter>mem</Filter>
+    </ClCompile>
     <ClCompile Include="mem.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>mem</Filter>
     </ClCompile>
     <ClCompile Include="offsets.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>mem</Filter>
     </ClCompile>
-    <ClCompile Include="proc.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="console.cpp">
+      <Filter>console</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="offsets.h">
+    <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="proc.h">
-      <Filter>Header Files</Filter>
+      <Filter>mem</Filter>
     </ClInclude>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="offsets.h">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="mem.h">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="console.h">
+      <Filter>console</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -16,3 +16,4 @@ using namespace std;
 #include "mem.h"
 #include "proc.h"
 #include "offsets.h"
+#include "console.h"
