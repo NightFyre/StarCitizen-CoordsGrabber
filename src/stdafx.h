@@ -13,7 +13,5 @@
 using namespace std;
 
 //Helpers
-#include "mem.h"
-#include "proc.h"
-#include "offsets.h"
+#include "exFrameWork.h"
 #include "console.h"

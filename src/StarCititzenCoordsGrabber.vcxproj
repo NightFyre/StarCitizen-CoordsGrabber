@@ -140,16 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="console.cpp" />
-    <ClCompile Include="mem.cpp" />
-    <ClCompile Include="offsets.cpp" />
-    <ClCompile Include="proc.cpp" />
-    <ClCompile Include="StarCititzenCoordsGrabber.cpp" />
+    <ClCompile Include="exFrameWork.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="console.h" />
-    <ClInclude Include="mem.h" />
-    <ClInclude Include="offsets.h" />
-    <ClInclude Include="proc.h" />
+    <ClInclude Include="exFrameWork.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -21,37 +21,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="StarCititzenCoordsGrabber.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="proc.cpp">
-      <Filter>mem</Filter>
-    </ClCompile>
-    <ClCompile Include="mem.cpp">
-      <Filter>mem</Filter>
-    </ClCompile>
-    <ClCompile Include="offsets.cpp">
-      <Filter>mem</Filter>
     </ClCompile>
     <ClCompile Include="console.cpp">
       <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="exFrameWork.cpp">
+      <Filter>mem</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="proc.h">
-      <Filter>mem</Filter>
-    </ClInclude>
-    <ClInclude Include="offsets.h">
-      <Filter>mem</Filter>
-    </ClInclude>
-    <ClInclude Include="mem.h">
-      <Filter>mem</Filter>
-    </ClInclude>
     <ClInclude Include="console.h">
       <Filter>console</Filter>
+    </ClInclude>
+    <ClInclude Include="exFrameWork.h">
+      <Filter>mem</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
