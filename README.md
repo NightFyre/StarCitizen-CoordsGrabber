@@ -9,4 +9,4 @@ C# Form Application for use with Coordinates Grabber. Tests coords and outputs a
 - UPDATE -> Adjust Player Position with Hot Keys, adjust Strength with XYZHotkey Textboxes
 
 # IMAGE
-![image](https://user-images.githubusercontent.com/80198020/140523093-9d7a9ea3-409b-4e8c-a10a-3e097a60c9ec.png)
+![image](https://user-images.githubusercontent.com/94016966/141825445-8187bc66-93b4-4a64-afe7-d24c8449e809.png)
