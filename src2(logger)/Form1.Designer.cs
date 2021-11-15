@@ -46,26 +46,28 @@ namespace StarCitizen_DevTool
             this.ProcessTimer = new System.Windows.Forms.Timer(this.components);
             this.hotkeys_checkBox = new System.Windows.Forms.CheckBox();
             this.x_strengthBox = new System.Windows.Forms.TextBox();
-            this.y_strengthBox = new System.Windows.Forms.TextBox();
-            this.z_strengthBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.hotkey_button = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.moveSTRENGTH_trackBar = new System.Windows.Forms.TrackBar();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.HotkeyTimer = new System.Windows.Forms.Timer(this.components);
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.trackbar_checkBox = new System.Windows.Forms.CheckBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.trackbarValue_label = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.moveSTRENGTH_trackBar)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -150,16 +152,16 @@ namespace StarCitizen_DevTool
             this.richTextBox.Location = new System.Drawing.Point(5, 184);
             this.richTextBox.Name = "richTextBox";
             this.richTextBox.ReadOnly = true;
-            this.richTextBox.Size = new System.Drawing.Size(246, 88);
+            this.richTextBox.Size = new System.Drawing.Size(246, 94);
             this.richTextBox.TabIndex = 4;
             this.richTextBox.Text = "";
             // 
             // active_Panel
             // 
             this.active_Panel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.active_Panel.Location = new System.Drawing.Point(0, 271);
+            this.active_Panel.Location = new System.Drawing.Point(0, 284);
             this.active_Panel.Name = "active_Panel";
-            this.active_Panel.Size = new System.Drawing.Size(350, 10);
+            this.active_Panel.Size = new System.Drawing.Size(437, 10);
             this.active_Panel.TabIndex = 5;
             // 
             // output_button
@@ -198,200 +200,231 @@ namespace StarCitizen_DevTool
             // hotkeys_checkBox
             // 
             this.hotkeys_checkBox.AutoSize = true;
+            this.hotkeys_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
             this.hotkeys_checkBox.ForeColor = System.Drawing.Color.Red;
-            this.hotkeys_checkBox.Location = new System.Drawing.Point(9, 7);
+            this.hotkeys_checkBox.Location = new System.Drawing.Point(263, 122);
             this.hotkeys_checkBox.Name = "hotkeys_checkBox";
-            this.hotkeys_checkBox.Size = new System.Drawing.Size(77, 17);
+            this.hotkeys_checkBox.Size = new System.Drawing.Size(74, 17);
             this.hotkeys_checkBox.TabIndex = 10;
             this.hotkeys_checkBox.Text = "HOTKEYS";
             this.hotkeys_checkBox.UseVisualStyleBackColor = true;
             // 
             // x_strengthBox
             // 
-            this.x_strengthBox.Location = new System.Drawing.Point(14, 42);
-            this.x_strengthBox.MaxLength = 3;
+            this.x_strengthBox.Location = new System.Drawing.Point(6, 19);
+            this.x_strengthBox.MaxLength = 5;
             this.x_strengthBox.Name = "x_strengthBox";
-            this.x_strengthBox.Size = new System.Drawing.Size(58, 20);
+            this.x_strengthBox.Size = new System.Drawing.Size(62, 20);
             this.x_strengthBox.TabIndex = 11;
-            // 
-            // y_strengthBox
-            // 
-            this.y_strengthBox.Location = new System.Drawing.Point(14, 68);
-            this.y_strengthBox.MaxLength = 3;
-            this.y_strengthBox.Name = "y_strengthBox";
-            this.y_strengthBox.Size = new System.Drawing.Size(58, 20);
-            this.y_strengthBox.TabIndex = 12;
-            // 
-            // z_strengthBox
-            // 
-            this.z_strengthBox.Location = new System.Drawing.Point(14, 94);
-            this.z_strengthBox.MaxLength = 3;
-            this.z_strengthBox.Name = "z_strengthBox";
-            this.z_strengthBox.Size = new System.Drawing.Size(58, 20);
-            this.z_strengthBox.TabIndex = 13;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(11, 26);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label5.Location = new System.Drawing.Point(15, 3);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 13);
+            this.label5.Size = new System.Drawing.Size(116, 13);
             this.label5.TabIndex = 14;
-            this.label5.Text = "STRENGTH";
+            this.label5.Text = "CUSTOM STRENGTH";
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.hotkey_button);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.hotkeys_checkBox);
-            this.panel2.Controls.Add(this.z_strengthBox);
+            this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.x_strengthBox);
-            this.panel2.Controls.Add(this.y_strengthBox);
             this.panel2.Location = new System.Drawing.Point(258, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(91, 210);
+            this.panel2.Size = new System.Drawing.Size(141, 111);
             this.panel2.TabIndex = 15;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+            this.label17.Location = new System.Drawing.Point(2, 42);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(135, 13);
+            this.label17.TabIndex = 26;
+            this.label17.Text = "NUM7: TOGGLE HOTKEYS";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label13.ForeColor = System.Drawing.Color.Red;
+            this.label13.Location = new System.Drawing.Point(3, 55);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(131, 13);
+            this.label13.TabIndex = 22;
+            this.label13.Text = "MOVEMENT CONTROLS";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+            this.label12.Location = new System.Drawing.Point(2, 93);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(76, 13);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "ARROW KEYS";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+            this.label11.Location = new System.Drawing.Point(3, 80);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(74, 13);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "NUM2: DOWN";
             // 
             // hotkey_button
             // 
-            this.hotkey_button.Location = new System.Drawing.Point(24, 118);
+            this.hotkey_button.Location = new System.Drawing.Point(71, 19);
             this.hotkey_button.Name = "hotkey_button";
-            this.hotkey_button.Size = new System.Drawing.Size(38, 23);
+            this.hotkey_button.Size = new System.Drawing.Size(62, 20);
             this.hotkey_button.TabIndex = 10;
             this.hotkey_button.Text = "SET";
             this.hotkey_button.UseVisualStyleBackColor = true;
             this.hotkey_button.Click += new System.EventHandler(this.hotkey_button_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+            this.label10.Location = new System.Drawing.Point(3, 67);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(56, 13);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "NUM1: UP";
+            // 
+            // moveSTRENGTH_trackBar
+            // 
+            this.moveSTRENGTH_trackBar.Location = new System.Drawing.Point(405, 5);
+            this.moveSTRENGTH_trackBar.Maximum = 500000;
+            this.moveSTRENGTH_trackBar.Name = "moveSTRENGTH_trackBar";
+            this.moveSTRENGTH_trackBar.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.moveSTRENGTH_trackBar.Size = new System.Drawing.Size(45, 277);
+            this.moveSTRENGTH_trackBar.SmallChange = 10000;
+            this.moveSTRENGTH_trackBar.TabIndex = 17;
+            this.moveSTRENGTH_trackBar.TickFrequency = 10000;
+            this.moveSTRENGTH_trackBar.Scroll += new System.EventHandler(this.moveSTRENGTH_trackBar_Scroll);
+            // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Location = new System.Drawing.Point(258, 221);
+            this.panel3.Location = new System.Drawing.Point(261, 234);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(91, 51);
+            this.panel3.Size = new System.Drawing.Size(136, 44);
             this.panel3.TabIndex = 16;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(25, 22);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 13);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "by NightFyre";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(5, 11);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label8.Location = new System.Drawing.Point(-3, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(78, 13);
+            this.label8.Size = new System.Drawing.Size(140, 24);
             this.label8.TabIndex = 17;
             this.label8.Text = "CoordsGrabber";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 35);
+            this.label7.Location = new System.Drawing.Point(73, 24);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 13);
             this.label7.TabIndex = 16;
-            this.label7.Text = "version 1.3";
+            this.label7.Text = "version 2.0";
             // 
-            // label6
+            // label9
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 13);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "NightCity Tool";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(1, 24);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(66, 13);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "by NightFyre";
             // 
             // HotkeyTimer
             // 
             this.HotkeyTimer.Enabled = true;
             this.HotkeyTimer.Tick += new System.EventHandler(this.HotkeyTimer_Tick);
             // 
-            // label10
+            // trackbar_checkBox
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(-1, 162);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(59, 13);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "NUM1: UP";
+            this.trackbar_checkBox.AutoSize = true;
+            this.trackbar_checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+            this.trackbar_checkBox.ForeColor = System.Drawing.Color.Red;
+            this.trackbar_checkBox.Location = new System.Drawing.Point(263, 145);
+            this.trackbar_checkBox.Name = "trackbar_checkBox";
+            this.trackbar_checkBox.Size = new System.Drawing.Size(80, 17);
+            this.trackbar_checkBox.TabIndex = 18;
+            this.trackbar_checkBox.Text = "TRACKBAR";
+            this.trackbar_checkBox.UseVisualStyleBackColor = true;
             // 
-            // label11
+            // label6
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(-1, 177);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 13);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "NUM2: DOWN";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(257, 166);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(145, 13);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "TRACKBAR STRENGTH";
             // 
-            // label12
+            // trackbarValue_label
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(-1, 192);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(80, 13);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "ARROW KEYS";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.ForeColor = System.Drawing.Color.Red;
-            this.label13.Location = new System.Drawing.Point(11, 147);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(66, 13);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "CONTROLS";
+            this.trackbarValue_label.AutoSize = true;
+            this.trackbarValue_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trackbarValue_label.ForeColor = System.Drawing.Color.Black;
+            this.trackbarValue_label.Location = new System.Drawing.Point(264, 187);
+            this.trackbarValue_label.Name = "trackbarValue_label";
+            this.trackbarValue_label.Size = new System.Drawing.Size(55, 13);
+            this.trackbarValue_label.TabIndex = 28;
+            this.trackbarValue_label.Text = "VALUE: ";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(-1, 45);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+            this.label14.Location = new System.Drawing.Point(259, 204);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(14, 13);
-            this.label14.TabIndex = 10;
-            this.label14.Text = "X";
+            this.label14.Size = new System.Drawing.Size(94, 13);
+            this.label14.TabIndex = 27;
+            this.label14.Text = "NUM8: INCREASE";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(-1, 71);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+            this.label15.Location = new System.Drawing.Point(260, 218);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(14, 13);
-            this.label15.TabIndex = 23;
-            this.label15.Text = "Y";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(-1, 97);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(14, 13);
-            this.label16.TabIndex = 24;
-            this.label16.Text = "Z";
+            this.label15.Size = new System.Drawing.Size(99, 13);
+            this.label15.TabIndex = 29;
+            this.label15.Text = "NUM5: DECREASE";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 281);
+            this.ClientSize = new System.Drawing.Size(437, 294);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.trackbarValue_label);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.trackbar_checkBox);
+            this.Controls.Add(this.moveSTRENGTH_trackBar);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label4);
@@ -400,6 +433,7 @@ namespace StarCitizen_DevTool
             this.Controls.Add(this.active_Panel);
             this.Controls.Add(this.richTextBox);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.hotkeys_checkBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Main";
@@ -409,6 +443,7 @@ namespace StarCitizen_DevTool
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.moveSTRENGTH_trackBar)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -433,8 +468,6 @@ namespace StarCitizen_DevTool
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Timer ProcessTimer;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox z_strengthBox;
-        private System.Windows.Forms.TextBox y_strengthBox;
         private System.Windows.Forms.TextBox x_strengthBox;
         private System.Windows.Forms.CheckBox hotkeys_checkBox;
         private System.Windows.Forms.Panel panel2;
@@ -443,15 +476,18 @@ namespace StarCitizen_DevTool
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Timer HotkeyTimer;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TrackBar moveSTRENGTH_trackBar;
+        private System.Windows.Forms.CheckBox trackbar_checkBox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label trackbarValue_label;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
     }
 }
 
