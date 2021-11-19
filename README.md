@@ -1,7 +1,5 @@
+# PATCHED
 # StarCitizen-CoordsGrabber
-
-PATCHED
-
 C++ Console Application to grab player coordinates and print to console
 - Press Numpad 9 to read current player position coordinates and output to console
 
