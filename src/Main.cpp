@@ -6,7 +6,7 @@ namespace Process
 	uintptr_t moduleBase;
 	DWORD dwExit = 0;
 	m1 Memory;
-	uintptr_t pCOORDS = 0x0D0AC050;
+	uintptr_t pCOORDS = 0x0D16D110;
 	vector<unsigned int> OffsetsX = { 0x560, 0x90, 0x0, 0x1C0 };
 	vector<unsigned int> OffsetsY = { 0x560, 0x90, 0x0, 0x1C8 };
 	vector<unsigned int> OffsetsZ = { 0x560, 0x90, 0x0, 0x1D0 };
